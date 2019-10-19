@@ -25,6 +25,10 @@
                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
 
                 </p>
+                <p>     <label class="required">صورة شخصية<span>*</span></label>
+                        <input id="image_user   " type="file" class="form-control" name="image_user">
+                        
+                </p>
             </div>
             <p class="form-submit">
                 <input type="submit" value="تسجيل جديد" class="button color small submit">

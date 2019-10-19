@@ -16,6 +16,7 @@ class CatagoryCreate extends Migration
         Schema::create('catagorys', function (Blueprint $table) {
             $table->increments('id');
             $table->String('cat_name');
+            $table->String('cat_image');
             $table->timestamps();
         });
     }

@@ -1,4 +1,4 @@
-@include('layouts.header')
+	@include('layouts.header')
 	
 	<div class="breadcrumbs">
 		<section class="container">
@@ -19,78 +19,29 @@
 	
 	<section class="container main-content">
 		<div class="row">
-			<div class="col-md-9">
+			<div id="arContainer" class="col-md-9">
+				@foreach ($posts as $post)
 				<article class="post blog_2 clearfix">
 					<div class="post-inner">
-				        <div class="post-img"><a href="single_post.html"><img src="http://placehold.it/250x190/222/FFF" alt=""></a></div>
-				        <h2 class="post-title"><span class="post-type"><i class="icon-picture"></i></span><a href="single_post.html">هذه هي المقالة الافتراضية .</a></h2>
+					<div class="post-img"><a href="/viewPost/{{$post->id}}" ><img src="{{$post->image}}" alt=""></a></div>
+				        <h2 class="post-title"><span class="post-type"><i class="icon-picture"></i></span><a >{{$post->title}}</a></h2>
 			            <div class="post-meta">
-			                <span class="meta-author"><i class="icon-user"></i><a href="#">Administrator</a></span>
-			                <span class="meta-date"><i class="icon-time"></i>فبراير 15 , 2014</span>
-			                <span class="meta-categories"><i class="icon-suitcase"></i><a href="#">Wordpress</a></span>
-			                <span class="meta-comment"><i class="icon-comments-alt"></i><a href="#">15 تعليق</a></span>
+			                <span class="meta-author"><i class="icon-user"></i>{{$post->userName}}</span>
+						<span class="meta-date"><i class="icon-time"></i>{{$post->created_at}}</span>
+			                <span class="meta-categories"><i class="icon-suitcase"></i><a href="#">{{$post->cat_name}}</a></span>
+			                <span class="meta-comment"><i class="icon-comments-alt"></i><a href="#">{{$post->count}} تعليق</a></span>
 			            </div>
 				        <div class="post-content">
-				            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
-				            <a href="single_post.html" class="post-read-more button color small">أكمل القراءة</a>
+				            <p>{!! $post->desc_post !!}</p>
+						<a href="viewPost/{{$post->id}}" class="post-read-more button color small">أكمل القراءة</a>
 				        </div><!-- End post-content -->
 				    </div><!-- End post-inner -->
 				</article><!-- End article.post -->
+				@endforeach
 				
-				<article class="post blog_2 clearfix">
-					<div class="post-inner">
-				        <div class="flexslider blog_silder margin_b_20 post-img">
-				            <ul class="slides">
-				                <li><img src="http://placehold.it/250x190/222/FFF" alt=""></li>
-				                <li><img src="http://placehold.it/250x190/555/FFF" alt=""></li>
-				            </ul>
-				        </div><!-- End flexslider -->
-				        <h2 class="post-title"><span class="post-type"><i class="icon-film"></i></span><a href="single_post.html">مقال سلايد جميل.</a></h2>
-				        <div class="post-meta">
-			                <span class="meta-author"><i class="icon-user"></i><a href="#">Administrator</a></span>
-			                <span class="meta-date"><i class="icon-time"></i>فبراير 15 , 2014</span>
-			                <span class="meta-categories"><i class="icon-suitcase"></i><a href="#">Wordpress</a></span>
-			                <span class="meta-comment"><i class="icon-comments-alt"></i><a href="#">15 تعليق</a></span>
-			            </div>
-				        <div class="post-content">
-				            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
-				            <a href="single_post.html" class="post-read-more button color small">أكمل القراءة</a>
-				        </div><!-- End post-content -->
-					</div><!-- End post-inner -->
-				</article><!-- End article.post -->
+			
 				
-				<article class="post blog_2 clearfix">
-					<div class="post-inner">
-				        <div class="video_embed post-img"><iframe height="500" src="//www.youtube.com/embed/JuyB7NO0EYY"></iframe></div>
-			        	<h2 class="post-title"><span class="post-type"><i class="icon-play-circle"></i></span><a href="single_post.html">هذه مقالة بها فيديو .</a></h2>
-			        	<div class="post-meta">
-			                <span class="meta-author"><i class="icon-user"></i><a href="#">Administrator</a></span>
-			                <span class="meta-date"><i class="icon-time"></i>فبراير 15 , 2014</span>
-			                <span class="meta-categories"><i class="icon-suitcase"></i><a href="#">Wordpress</a></span>
-			                <span class="meta-comment"><i class="icon-comments-alt"></i><a href="#">15 تعليق</a></span>
-			            </div>
-				        <div class="post-content">
-				            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
-				            <a href="single_post.html" class="post-read-more button color small">أكمل القراءة</a>
-				        </div><!-- End post-content -->
-					</div><!-- End post-inner -->
-				</article><!-- End article.post -->
-				
-				<article class="post blog_2 clearfix">
-					<div class="post-inner">
-				        <h2 class="post-title"><span class="post-type"><i class="icon-file-alt"></i></span><a href="single_post.html">مقالة بدون صورة .</a></h2>
-				        <div class="post-meta">
-			                <span class="meta-author"><i class="icon-user"></i><a href="#">Administrator</a></span>
-			                <span class="meta-date"><i class="icon-time"></i>فبراير 15 , 2014</span>
-			                <span class="meta-categories"><i class="icon-suitcase"></i><a href="#">Wordpress</a></span>
-			                <span class="meta-comment"><i class="icon-comments-alt"></i><a href="#">15 تعليق</a></span>
-			            </div>
-				        <div class="post-content">
-				            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.ولذلك يتم استخدام طريقة لوريم إيبسوم .</p>
-				            <a href="single_post.html" class="post-read-more button color small">أكمل القراءة</a>
-				        </div><!-- End post-content -->
-				    </div><!-- End post-inner -->
-				</article><!-- End article.post -->
+			
 				
 				<div class="pagination">
 				    <a href="#" class="prev-button"><i class="icon-angle-left"></i></a>

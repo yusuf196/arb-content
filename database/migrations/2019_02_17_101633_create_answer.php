@@ -16,10 +16,13 @@ class CreateAnswer extends Migration
         Schema::create('answers', function (Blueprint $table) {
             $table->increments('id');
             $table->text('answer_text');
+            $table->integer('rate')->default(0);
+            $table->boolean('accepted')->default(false);
             $table->integer('qustion_id')->unsigned();
             $table->foreign('qustion_id')->references('id')->on('qustions');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
+
             $table->timestamps();
         });
     }

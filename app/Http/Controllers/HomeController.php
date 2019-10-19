@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use JavaScript;
+use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('front.index');
+        Javascript::put([ 'user_id' => Auth::user()->id]);
+        return view('front.home');
     }
+
+
+
+    
 }

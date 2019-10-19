@@ -23,14 +23,14 @@
 			<div class="contact-us">
 				<div class="col-md-12">
 					<div class="page-content">
-						<iframe height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=egypt&amp;hl=en&amp;sll=26.820553,30.802498&amp;sspn=16.874794,19.753418&amp;hnear=Egypt&amp;t=m&amp;z=6&amp;output=embed"></iframe>
+						<iframe height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=gaza&amp;hl=en&amp;sll=31.5016943,34.4406232&amp;sspn=16.874794,19.753418&amp;hnear=Gaza&amp;t=m&amp;z=6&amp;output=embed"></iframe>
 					</div><!-- End page-content -->
 				</div>
 				<div class="col-md-7">
 					<div class="page-content">
 						<h2>قل مرحبا !</h2>
-						<p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.ولذلك يتم استخدام طريقة لوريم إيبسوم .</p>
-						<form class="form-style form-style-3 form-style-5 form-js" action="contact_us.php" method="post">
+						<p>تفضل بمراسلتنا</p>
+						<form class="form-style form-style-3 form-style-5 form-js" action="/contactus" method="post">
 							<div class="form-inputs clearfix">
 								<p>
 									<label for="name" class="required">الأسم<span>*</span></label>
@@ -60,11 +60,21 @@
 				<div class="col-md-5">
 					<div class="page-content">
 						<h2>من نحن</h2>
-						<p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء.</p>
+						<p>نحن الشباب العربي  الذي يحاول ان يسمو بلغته 
+							هدفنا زياد التفاعل بلغتنا العربية  على جميع المنصات وبداية من موقعنا هذا 
+									 
+							
+
+							<p> المشاركين  في بناء  الموقع</p>
+							<a style="display:block;" href="#"><small>يوسف صواوين</small></a>
+							<a style="display:block;" href="#"><small>محمد بلعاوي</small></a>
+							<a style="display:block;" href="#"><small>يوسف عباس</small></a>
+							<a style="display:block;" href="#"><small>محمد الرومي</small></a>
+						</p>
 						<div class="widget widget_contact">
 							<ul>
-								<li><i class="icon-map-marker"></i>العنوان :<p>شبكة اسئلني ، السيدة زينب ، القاهرة.</p></li>
-								<li><i class="icon-phone"></i>الهاتف ت :<p>(+2)01111011110</p></li>
+								<li><i class="icon-map-marker"></i>العنوان :<p> غزه.</p></li>
+								<li><i class="icon-phone"></i>الهاتف ت :<p>0597801733</p></li>
 								<li><i class="icon-envelope-alt"></i>البريد الإلكتروني :<p>info@example.com</p></li>
 								<li>
 									<i class="icon-share"></i>الروابط الاجتماعية :

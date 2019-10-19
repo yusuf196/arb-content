@@ -74,6 +74,12 @@
 						<label class="required">إعادة كلمة المرور<span>*</span></label>
 						<input type="password" value="">
 					</p>
+					<p>     <label class="required">صورة شخصية<span>*</span></label>
+                        <input id="image_user   " type="file" class="form-control" name="image_user">
+                        @if (auth()->user()->image)
+                            <code>{{ auth()->user()->image }}</code>
+                        @endif
+                </p>
 				</div>
 				<p class="form-submit">
 					<input type="submit" value="تسجيل جديد" class="button color small submit">

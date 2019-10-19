@@ -17,6 +17,9 @@ class CreateQustion extends Migration
             $table->increments('id');
             $table->String('qustion_title');
             $table->text('qustion_desc');
+            $table->integer('answers_count')->default(0)->unsigned();
+            $table->boolean("answerd")->default(false);
+            $table->integer('views')->default(0)->unsigned();
             $table->integer('catagoty_id')->unsigned();
             $table->foreign('catagoty_id')->references('id')->on('catagorys');
             $table->integer('user_id')->unsigned();

@@ -1,6 +1,7 @@
 
 @include('layouts.header')
 <div class="breadcrumbs">
+    {{ csrf_field() }}
 	<section class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -20,6 +21,20 @@
 </div><!-- End breadcrumbs -->
 
 <section class="container main-content">
+	{!! csrf_field() !!}
+	@if (count($errors) > 0)
+		<div class="alert alert-danger">
+			<ul>
+				@foreach($errors->all() as $error)
+					<li>{{$error}}</li>
+					@endforeach
+			</ul>
+
+
+		</div>
+
+
+		@endif
 	<div class="row">
 		<div class="col-md-9">
 
@@ -29,30 +44,35 @@
 				<p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
 
 				<div class="form-style form-style-3" id="question-submit">
-					<form>
-						<div class="form-inputs clearfix">
+					<form action="addqustion" method="post" value="{{ csrf_token() }}">
+						{{ csrf_field() }}
+						<div class="form-group">
+
 							<p>
 								<label class="required">عنوان السؤال<span>*</span></label>
-								<input type="text" id="question-title">
+								<input type="text" id="question-title"  name="title" class="form-control" value="{{Request::old('title')}}">
 								<span class="form-description">يرجى اختيار عنوان مناسب للسؤال حتي يتم الرد عليه بسهوله .</span>
 							</p>
 							<p>
-								<label>الوسوم</label>
-								<input type="text" class="input" name="question_tags" id="question_tags" data-seperator=",">
-								<span class="form-description">الرجاء اختيار كلمات مناسبة مثال : <span class="color">question , poll</span> .</span>
+								{{--<label>الوسوم</label>--}}
+								{{--<input type="text" class="input" name="question_tags" id="question_tags" data-seperator=",">--}}
+								{{--<span class="form-description">الرجاء اختيار كلمات مناسبة مثال : <span class="color">question , poll</span> .</span>--}}
 							</p>
 							<p>
 								<label class="required">القسم<span>*</span></label>
+
 								<span class="styled-select">
-										<select>
-											<option value="">اختار القسم</option>
-											<option value="1">قسم 2</option>
-											<option value="2">قسم 2</option>
+										<select class="form-control" name="catname" id="catname">
+                                            @foreach($qustions as $qus)
+											<option value="{{$qus->id}}">{{$qus->cat_name}}</option>
+											@endforeach
 										</select>
+
 									</span>
 								<span class="form-description">الرجاء اختيار القسم المناسب لسهوله البحث والوصول الي سؤالك .</span>
 							</p>
 							<p class="question_poll_p">
+								{{ csrf_field() }}
 								<label for="question_poll">التصويت</label>
 								<input type="checkbox" id="question_poll" value="1" name="question_poll">
 								<span class="question_poll">هل هذا السؤال استطلاع ؟</span>
@@ -91,11 +111,12 @@
 						<div id="form-textarea">
 							<p>
 								<label class="required">التفاصيل<span>*</span></label>
-								<textarea id="question-details" aria-required="true" cols="58" rows="8"></textarea>
+								<textarea id="question-details" aria-required="true" cols="58" rows="8" name="body" class="form-control"   ></textarea>
 								<span class="form-description">اكتب وصفا جيدا وبالتفصيل .</span>
 							</p>
 						</div>
 						<p class="form-submit">
+
 							<input type="submit" id="publish-question" value="نشر سؤالك" class="button color small submit">
 						</p>
 					</form>

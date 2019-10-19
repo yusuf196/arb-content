@@ -26,35 +26,36 @@
 					<div class="boxedtitle page-title"><h2>تعديل الملف الشخصي</h2></div>
 					
 					<div class="form-style form-style-4">
-						<form>
+						<form action="/editUser" method="POST" enctype="multipart/form-data">
+							@csrf
 							<div class="form-inputs clearfix">
 								<p>
 									<label>الأسم الأول</label>
-									<input type="text">
+									<input type="text" name="FirstName" >
 								</p>
 								<p>
 									<label>الأسم الاخير</label>
-									<input type="text">
+									<input type="text" name="LastName">
 								</p>
 								<p>
 									<label class="required">البريد الإلكتروني<span>*</span></label>
-									<input type="email">
+									<input type="email" name="Email" >
 								</p>
 								<p>
 									<label>الموقع</label>
-									<input type="text">
+									<input type="text" name="Location">
 								</p>
 								<p>
 									<label class="required">كملة المرور<span>*</span></label>
-									<input type="password" value="">
+									<input type="password" value="" name="Password">
 								</p>
 								<p>
 									<label class="required">إعادة كملة المرور<span>*</span></label>
-									<input type="password" value="">
+									<input type="password" value="" name="rePassword">
 								</p>
 								<p>
 									<label>الدولة</label>
-									<input type="text">
+									<input type="text" name="Cuntry">
 								</p>
 							</div>
 							<div class="form-style form-style-2">
@@ -62,7 +63,7 @@
 								<p class="user-profile-p">
 									<label>صورة الملف الشصخي</label>
 									<div class="fileinputs">
-										<input type="file" class="file">
+										<input type="file" class="file" name="Image">
 										<div class="fakefile">
 											<button type="button" class="button small margin_0">أختار الملف</button>
 											<span><i class="icon-arrow-up"></i>تصفح</span>
@@ -72,26 +73,26 @@
 								<div class="clearfix"></div>
 								<p>
 									<label>نبذة عنك</label>
-									<textarea cols="58" rows="8"></textarea>
+									<textarea cols="58" rows="8" name="AboutMe" ></textarea>
 								</p>
 							</div>
 							<div class="form-inputs clearfix">
 								<p>
 									<label>Facebook</label>
-									<input type="text">
+									<input type="text" name="Facebook">
 								</p>
 								<p>
 									<label>Twitter</label>
-									<input type="text">
+									<input type="text" name="Twitter">
 								</p>
 								<p>
 									<label>Linkedin</label>
-									<input type="email">
+									<input type="email" name="Linkedin">
 								</p>
-								<p>
+								{{-- <p>
 									<label>Google plus</label>
-									<input type="text">
-								</p>
+									<input type="text" name>
+								</p> --}}
 							</div>
 							<p class="form-submit">
 								<input type="submit" value="تحديث" class="button color small login-submit submit">

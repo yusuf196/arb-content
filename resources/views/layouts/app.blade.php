@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="ar">
 
 <body>
 @include('layouts.header')
@@ -8,12 +8,8 @@
 
 </div>
 
+@yield('content')
 @include('layouts.footer')
-
-
-
-
-
 
 </body>
 </html>

@@ -21,163 +21,12 @@
 	<section class="container main-content">
 		<div class="row">
 			<div class="col-md-9">
-				<div class="row">
-					<div class="user-profile">
-						<div class="col-md-12">
-							<div class="page-content">
-								<h2>عن admin</h2>
-								<div class="user-profile-img"><img width="60" height="60" src="http://placehold.it/60x60/FFF/444" alt="admin"></div>
-								<div class="ul_list ul_list-icon-ok about-user">
-									<ul>
-										<li class="registe-user"><i class="icon-plus"></i>تاريخ التسجيل : <span>فبراير 10, 2014</span></li>
-										<li><i class="icon-map-marker"></i>البلد : <span>Egypt</span></li>
-										<li><i class="icon-globe"></i>الموقع الشخصي : <a target="_blank" href="http://themeforest.net/user/vbegy">عرض</a></li>
-									</ul>
-								</div>
-								<p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء.</p>
-								<div class="clearfix"></div>
-								<span class="user-follow-me">تابعني</span>
-								<a href="#" original-title="Facebook" class="tooltip-n">
-									<span class="icon_i">
-										<span class="icon_square" icon_size="30" span_bg="#3b5997" span_hover="#2f3239">
-											<i class="social_icon-facebook"></i>
-										</span>
-									</span>
-								</a>
-								<a href="#" original-title="Twitter" class="tooltip-n">
-									<span class="icon_i">
-										<span class="icon_square" icon_size="30" span_bg="#00baf0" span_hover="#2f3239">
-											<i class="social_icon-twitter"></i>
-										</span>
-									</span>
-								</a>
-								<a href="#" original-title="Linkedin" class="tooltip-n">
-									<span class="icon_i">
-										<span class="icon_square" icon_size="30" span_bg="#006599" span_hover="#2f3239">
-											<i class="social_icon-linkedin"></i>
-										</span>
-									</span>
-								</a>
-								<a href="#" original-title="Google plus" class="tooltip-n">
-									<span class="icon_i">
-										<span class="icon_square" icon_size="30" span_bg="#c43c2c" span_hover="#2f3239">
-											<i class="social_icon-gplus"></i>
-										</span>
-									</span>
-								</a>
-								<a href="#" original-title="Email" class="tooltip-n">
-									<span class="icon_i">
-										<span class="icon_square" icon_size="30" span_bg="#000" span_hover="#2f3239">
-											<i class="social_icon-email"></i>
-										</span>
-									</span>
-								</a>
-							</div><!-- End page-content -->
-						</div><!-- End col-md-12 -->
-						<div class="col-md-12">
-							<div class="page-content page-content-user-profile">
-								<div class="user-profile-widget">
-									<h2>أحصائيات العضو</h2>
-									<div class="ul_list ul_list-icon-ok">
-										<ul>
-											<li><i class="icon-question-sign"></i><a href="user_questions.html">الاسئلة<span> ( <span>30</span> ) </span></a></li>
-											<li><i class="icon-comment"></i><a href="user_answers.html">الإجابات<span> ( <span>10</span> ) </span></a></li>
-											<li><i class="icon-star"></i><a href="user_favorite_questions.html">الاسئلة المفضلة<span> ( <span>3</span> ) </span></a></li>
-											<li><i class="icon-heart"></i><a href="user_points.html">النقاط<span> ( <span>20</span> ) </span></a></li>
-											<li><i class="icon-asterisk"></i>الافضل اجابة<span> ( <span>2</span> ) </span></li>
-										</ul>
-									</div>
-								</div><!-- End user-profile-widget -->
-							</div><!-- End page-content -->
-						</div><!-- End col-md-12 -->
-					</div><!-- End user-profile -->
-				</div><!-- End row -->
+				
 				<div class="clearfix"></div>
 				<div class="page-content page-content-user">
-					<div class="user-questions">
-						<article class="question user-question">
-							<h3>
-								<a href="single_question.html">هذا هو سؤالي الأول</a>
-							</h3>
-								<div class="question-type-main"><i class="icon-question-sign"></i>سؤال</div>
-							<div class="question-content">
-								<div class="question-bottom">
-									<div class="question-answered"><i class="icon-ok"></i>بانتظار الحل</div>
-									<span class="question-favorite"><i class="icon-star"></i>5</span>
-									<span class="question-category"><a href="#"><i class="icon-folder-close"></i>وردبريس</a></span>
-									<span class="question-date"><i class="icon-time"></i>منذ 4 دقائق</span>
-									<span class="question-comment"><a href="#"><i class="icon-comment"></i>5 إجابات</a></span>
-									<a class="question-reply" href="#"><i class="icon-reply"></i>رد</a>
-									<span class="question-view"><i class="icon-user"></i>70 مشاهدة</span>
-								</div>
-							</div>
-						</article>
-						<article class="question user-question">
-							<h3>
-								<a href="single_question_poll.html">هذا هو سؤال الاستطلاع الثاني</a>
-							</h3>
-								<div class="question-type-main"><i class="icon-signal"></i>الاستطلاع</div>
-							<div class="question-content">
-								<div class="question-bottom">
-									<span class="question-favorite"><i class="icon-star-empty"></i>0</span>
-									<span class="question-category"><a href="#"><i class="icon-folder-close"></i>CSS</a></span>
-									<span class="question-date"><i class="icon-time"></i>منذ 4 دقائق</span>
-									<span class="question-comment"><a href="#"><i class="icon-comment"></i>5 إجابات</a></span>
-									<a class="question-reply" href="#"><i class="icon-reply"></i>رد</a>
-									<span class="question-view"><i class="icon-user"></i>70 مشاهدة</span>
-								</div>
-							</div>
-						</article>
-						<article class="question user-question">
-							<h3>
-								<a href="single_question.html">هذا هو سؤالي الثالث</a>
-							</h3>
-								<div class="question-type-main"><i class="icon-question-sign"></i>سؤال</div>
-							<div class="question-content">
-								<div class="question-bottom">
-									<div class="question-answered question-answered-done"><i class="icon-ok"></i>تم الحل</div>
-									<span class="question-favorite"><i class="icon-star-empty"></i>0</span>
-									<span class="question-category"><a href="#"><i class="icon-folder-close"></i>HTML</a></span>
-									<span class="question-date"><i class="icon-time"></i>منذ 4 دقائق</span>
-									<span class="question-comment"><a href="#"><i class="icon-comment"></i>5 إجابات</a></span>
-									<a class="question-reply" href="#"><i class="icon-reply"></i>رد</a>
-									<span class="question-view"><i class="icon-user"></i>70 مشاهدة</span>
-								</div>
-							</div>
-						</article>
-						<article class="question user-question">
-							<h3>
-								<a href="single_question.html">هذا هو سؤالي الرابع</a>
-							</h3>
-								<div class="question-type-main"><i class="icon-question-sign"></i>سؤال</div>
-							<div class="question-content">
-								<div class="question-bottom">
-									<span class="question-favorite"><i class="icon-star-empty"></i>0</span>
-									<span class="question-category"><a href="#"><i class="icon-folder-close"></i>PHP</a></span>
-									<span class="question-date"><i class="icon-time"></i>منذ 4 دقائق</span>
-									<span class="question-comment"><a href="#"><i class="icon-comment"></i>5 إجابات</a></span>
-									<a class="question-reply" href="#"><i class="icon-reply"></i>رد</a>
-									<span class="question-view"><i class="icon-user"></i>70 مشاهدة</span>
-								</div>
-							</div>
-						</article>
-						<article class="question user-question">
-							<h3>
-								<a href="single_question.html">هذا هو سؤالي الخامس</a>
-							</h3>
-								<div class="question-type-main"><i class="icon-question-sign"></i>سؤال</div>
-							<div class="question-content">
-								<div class="question-bottom">
-									<div class="question-answered"><i class="icon-ok"></i>بانتظار الحل</div>
-									<span class="question-favorite"><i class="icon-star-empty"></i>0</span>
-									<span class="question-category"><a href="#"><i class="icon-folder-close"></i>jQuery</a></span>
-									<span class="question-date"><i class="icon-time"></i>منذ 4 دقائق</span>
-									<span class="question-comment"><a href="#"><i class="icon-comment"></i>5 إجابات</a></span>
-									<a class="question-reply" href="#"><i class="icon-reply"></i>رد</a>
-									<span class="question-view"><i class="icon-user"></i>70 مشاهدة</span>
-								</div>
-							</div>
-						</article>
+					<div id="qustx" class="user-questions">
+					
+						
 					</div>
 				</div>
 				
@@ -209,4 +58,77 @@
 
 <div class="go-up"><i class="icon-chevron-up"></i></div>
 @include('layouts.footer')
+<script>	
+	$(document).ready(function(){
+getQuestions();
+// setInterval(function(){
+//     getQuestions();
+// }, 10000);
+});
+		function getQuestions(){
+			$.ajax({
+				url: '/getUserQuestions/'+'<?php echo Auth::user()->id;?>',
+				type: 'GET',
+				datatype: 'json',
+				success: function(data){
+				 //  mostAnswerd=data[2];
+				 //  recentlyAnswerd=data[1];
+					var sess_id = '<?php echo Auth::user()->id; ?>';
+					html = '';
+					condition = '';
+					//var dt = jQuery.parseJSON(data);
+					for(var i = 0; i < data.length; i++)
+					{
+						var answerd="لم يحل";
+						var notanswerdClass='"question-answered question-notanswered"';
+						var notanswerdIcon="icon-exclamation-sign";
+						if(data[i].answerd){
+							
+							answerd="تم الحل"; notanswerdClass='"question-answered question-answered-done"'; notanswerdIcon="icon-ok"; }
+						
+						var qust_user = data[i].user_id;
+						if(qust_user == sess_id){
+							condition = '\t\t\t\t\t\t\t\t<a class="question-report" href="/deletequstion/'+data[i].id+'/">حذف</a>\n' +
+								'\t\t\t\t\t\t\t\t<a class="question-type-main" href="edit/'+data[i].id+'"><i class="icon-question-sign" ></i>تعديل</a>\n' ;
+						}else{
+							condition='';
+						}
+						html += '\t\t            <div class="tab-inner-warp">\n' +
+							'\t\t\t\t\t\t<div class="tab-inner">\n' +
+							'\t\t\t\t\t\t\t<article class="question question-type-normal">\n' +
+							'\t\t\t\t\t\t\t\t<h2>\n' +
+							'\t\t\t\t\t\t\t\t\t<a href="/viewqust/'+data[i].id+'/">'+data[i].qustion_title+'</a>\n' +
+							'\t\t\t\t\t\t\t\t</h2>\n' +condition
+							+
+							
+							'\t\t\t\t\t\t\t\t<div class="question-inner">\n' +
+							'\t\t\t\t\t\t\t\t\t<div class="clearfix"></div>\n' +
+							'\t\t\t\t\t\t\t\t\t<p class="question-desc">'+data[i].qustion_desc.substring(1, 80)+'...</p>\n' +
+							'\t\t\t\t\t\t\t\t\t<div class="question-details">\n' +
+							'\t\t\t\t\t\t\t\t\t\t<span class='+notanswerdClass+'><i class='+notanswerdIcon+'></i>'+answerd+'</span>\n' +
+							'\t\t\t\t\t\t\t\t\t\t<span class="question-favorite"><i class="icon-star"></i>5</span>\n' +
+							'\t\t\t\t\t\t\t\t\t</div>\n' +
+							'\t\t\t\t\t\t\t\t\t<span class="question-category"><a href="#"><i class="icon-folder-close"> '+data[i].cat_name+'</i></a></span>\n' +
+							'\t\t\t\t\t\t\t\t\t<span class="question-date"><i class="icon-time"></i>'+data[i].created_at+'</span>\n' +
+							'\t\t\t\t\t\t\t\t\t<span class="question-comment"><a href="#"><i class="icon-comment"></i>'+data[i].answers_count+'	 إجابات</a></span>\n' +
+							'\t\t\t\t\t\t\t\t\t<span class="question-view"><i class="icon-user"></i>'+data[i].views+' مشاهدة</span>\n' +
+							'\t\t\t\t\t\t\t\t\t<div class="clearfix"></div>\n' +
+							'\t\t\t\t\t\t\t\t</div>\n' +
+							'\t\t\t\t\t\t\t</article>\n' +
+							'\n' +
+							'\n' +
+							'\t\t\t\t\t    </div>\n' +
+							'\t\t\t\t\t</div>';
+						//console.log(data[i].qustion_title);
+					}
+					
+					$('#qustx').html(html);
+					},
+				error: function()
+				{
+	
+				}
+			});
+		}
+		</script>
 <!-- js -->

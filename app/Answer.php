@@ -16,8 +16,13 @@ class Answer extends Model
         return $this->hasMany('App\AnswerComment');
 
     }
-    public function usre(){
-        return $this->belongsTo('App\User');
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function answer_user_rate(){
+        return $this->hasOne('App\Answer');
     }
 
 

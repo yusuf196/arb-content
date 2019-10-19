@@ -24,15 +24,15 @@
                 <div class="widget">
                     <h3 class="widget_title">وصلات سريعة</h3>
                     <ul>
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="ask_question.html">إسألني سؤال</a></li>
+                        <li><a href="/home">الرئيسية</a></li>
+                        <li><a href="/addqustion">إسألني سؤال</a></li>
                         <li><a href="#">من نحن</a></li>
-                        <li><a href="cat_question.html">الاسئلة</a></li>
+                        <li><a href="/qustion">الاسئلة</a></li>
 
-                        <li><a href="blog_1.html">المقالات</a></li>
+                        <li><a href="/blog">المقالات</a></li>
                         <li><a href="right_sidebar.html">الكتب الالكترونية</a></li>
                         <li><a href="shortcodes.html">الاشعارات</a></li>
-                        <li><a href="contact_us.html">اتصل بنا</a></li>
+                        <li><a href="/contactus">اتصل بنا</a></li>
 
                     </ul>
                 </div>
@@ -74,24 +74,31 @@
         </div><!-- End social_icons -->
     </section><!-- End container -->
 </footer>
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="js/jquery.easing.1.3.min.js"></script>
-<script src="js/html5.js"></script>
-<script src="js/twitter/jquery.tweet.js"></script>
-<script src="js/jflickrfeed.min.js"></script>
-<script src="js/jquery.inview.min.js"></script>
-<script src="js/jquery.tipsy.js"></script>
-<script src="js/tabs.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
-<script src="js/jquery.scrollTo.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/tags.js"></script>
-<script src="js/jquery.bxslider.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/custom-ar.js"></script>
+<script src="/notification/js/materialize.min.js"></script>
+<script src="/notification/js/materialize.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="/js/myjs.js" defer></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/js/jquery.easing.1.3.min.js"></script>
+<script src="/js/html5.js"></script>
+<script src="/js/twitter/jquery.tweet.js"></script>
+<script src="/js/jflickrfeed.min.js"></script>
+<script src="/js/jquery.inview.min.js"></script>
+<script src="/js/jquery.tipsy.js"></script>
+<script src="/js/tabs.js"></script>
+<script src="/js/jquery.flexslider.js"></script>
+<script src="/js/jquery.prettyPhoto.js"></script>
+<script src="/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="/js/jquery.scrollTo.js"></script>
+<script src="/js/jquery.nav.js"></script>
+<script src="/js/tags.js"></script>
+<script src="/js/jquery.bxslider.min.js"></script>
+<script src="/js/custom.js"></script>
+<script src="/js/custom-ar.js"></script>
+<script src="/notification/js/my.js"></script>
+
 <!-- End js -->
 
 </body><!-- End footer-bottom -->

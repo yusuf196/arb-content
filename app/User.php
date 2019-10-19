@@ -31,22 +31,32 @@ class User extends Authenticatable
         return $this->hasMany('App\Post');
 
     }
-    public function qustions()
+        public
+        function qustions()
         {
             return $this->hasMany('App\Qustion');
 
         }
-
-    public function answers(){
-
-        return $this->hasMany('App\Answer');
+    // public function user()
+    // {
+    //     return $this->belongsTo('App\User');
+    // }
+    public function answer_user_rate()
+    {
+        return $this->hasOne('App\answer_user_rate');
     }
 
-    public function answer_comments(){
-        return $this->hasMany('App\AnswerComment');
-    } 
 
-    public function CATS(){
-       return $this->hasMany('App\Catagory');
-    }
+
+
+ public function notifications(){
+     return $this->hasMany('App\notification');
+ }
+
+ public function user_point(){
+    return $this->belongsTo('App\user_point');
+}
+public function answers(){
+    return $this->hasMany('App\Answer');
+}
 }
